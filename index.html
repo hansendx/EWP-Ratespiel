@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Ratespiel</title>
+		<link rel="stylesheet" href="node_modules/datatables/media/css/jquery.dataTables.min.css" />
+		<link rel="stylesheet" href="node_modules/tooltipster/css/tooltipster.css" />
+		<link rel="stylesheet" href="node_modules/tooltipster/css/themes/tooltipster-shadow.css" />
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+		<link rel="stylesheet" href="ratespiel.css" />
+	</head>
+	<body>
+		<div class="jumbotron text-center">
+			<h1 class="">Rate die Zahl</h1>
+			<p>Ziel des Spiels ist es eine zuf&auml;llige Zahl von 1 bis 100 zu erraten</p>
+			<p>Dr&uuml;cke auf Start um ein neues Spiel zu beginnen und auf Check um zu raten</p>
+		</div>
+		<div class="container">	
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-xs-12 col-sm-12">
+					<input type="text" id="user-input">
+					<button type="button"id="start" class="btn btn-primary">
+						<span class="glyphicon glyphicon-flag"> </span>	Start
+					</button>
+
+
+					<button id="check" class="btn btn-success">
+						<span id="checkglyph" class="glyphicon glyphicon-play-circle"></span> Check 
+					</button>
+					<div>
+						<p>Verbleibende Versuche: <span id="roundCount">7</span></p>
+					</div>
+				</div>
+
+
+				<div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+					<div class="text-left">
+						<ul id="result" class="list-group">
+						</ul>
+					</div>
+				</div>
+
+
+				
+				<script src="node_modules/jquery/dist/jquery.min.js"></script>
+				<script src="node_modules/datatables/media/js/jquery.dataTables.min.js"></script>	
+				<script src="node_modules/tooltipster/js/jquery.tooltipster.min.js"></script>	
+				<script src="ratespiel.js"></script>
+			</div>
+		</div>
+	</body>
+</html>
